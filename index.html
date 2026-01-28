@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Caroline Beauty Studio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#f7f2ec;
+  --card:#ffffff;
+  --gold:#c7a24b;
+  --brown:#4a3323;
+  --shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:Poppins,sans-serif;
+  background:var(--bg);
+  color:var(--brown);
+}
+
+.container{
+  max-width:520px;
+  margin:auto;
+  padding:20px 16px 120px;
+}
+
+/* HERO */
+.hero{
+  text-align:center;
+  margin-bottom:24px;
+}
+
+.hero h1{
+  font-family:"Playfair Display",serif;
+  color:var(--gold);
+  font-size:32px;
+}
+
+.hero p{
+  font-size:14px;
+  opacity:.9;
+}
+
+/* CARD */
+.card{
+  background:var(--card);
+  border-radius:22px;
+  padding:20px;
+  margin-bottom:22px;
+  box-shadow:var(--shadow);
+  animation:fade .6s ease;
+}
+
+.card h2{
+  font-family:"Playfair Display",serif;
+  color:var(--gold);
+  font-size:22px;
+  margin-bottom:10px;
+}
+
+.card p{
+  font-size:14px;
+  line-height:1.7;
+}
+
+/* IMAGENS */
+img{
+  width:100%;
+  border-radius:16px;
+  margin-top:12px;
+  display:block;
+}
+
+/* SERVIÇOS */
+.servico{
+  border-left:4px solid var(--gold);
+  padding-left:14px;
+  margin-top:12px;
+}
+
+.servico span{
+  font-weight:500;
+  display:block;
+  margin-top:4px;
+}
+
+/* GALERIA */
+.galeria{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin-top:14px;
+}
+
+.galeria img{
+  height:160px;
+  object-fit:cover;
+}
+
+/* CTA */
+.cta{
+  background:linear-gradient(135deg,var(--gold),#e6c87c);
+  color:#fff;
+  text-align:center;
+}
+
+.cta h2{color:#fff}
+
+.cta a{
+  display:inline-block;
+  margin-top:14px;
+  background:#fff;
+  color:var(--gold);
+  padding:14px 30px;
+  border-radius:40px;
+  text-decoration:none;
+  font-weight:500;
+}
+
+/* WHATSAPP */
+.whatsapp{
+  position:fixed;
+  bottom:18px;
+  left:50%;
+  transform:translateX(-50%);
+  background:#25D366;
+  color:#fff;
+  padding:14px 32px;
+  border-radius:40px;
+  text-decoration:none;
+  font-weight:500;
+  box-shadow:0 12px 30px rgba(0,0,0,.35);
+  animation:pulse 2s infinite;
+  z-index:1000;
+}
+
+@keyframes fade{
+  from{opacity:0;transform:translateY(20px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+@keyframes pulse{
+  0%{transform:translateX(-50%) scale(1)}
+  50%{transform:translateX(-50%) scale(1.05)}
+  100%{transform:translateX(-50%) scale(1)}
+}
+</style>
+</head>
+
+<body>
+
+<a class="whatsapp"
+href="https://wa.me/5511978818235?text=Olá!%20Vim%20pelo%20site%20do%20Caroline%20Beauty%20Studio%20e%20gostaria%20de%20agendar%20um%20horário%20✨">
+💬 Agendar no WhatsApp
+</a>
+
+<div class="container">
+
+<div class="hero">
+  <h1>Caroline Beauty Studio</h1>
+  <p>Extensão de Cílios • Atendimento Personalizado</p>
+</div>
+
+<div class="card">
+  <h2>Lash Extensions</h2>
+  <img src="imagens/foto1.png" alt="Lash Extensions">
+</div>
+
+<div class="card">
+  <h2>Sobre mim</h2>
+  <p>
+    Nosso studio foi pensado para oferecer conforto, tranquilidade
+    e um atendimento feito com carinho em cada detalhe 🤍<br><br>
+    Trabalhamos com produtos de qualidade, técnicas seguras e
+    atendimento humano.
+  </p>
+  <img src="imagens/foto2.png" alt="Sobre mim">
+</div>
+
+<div class="card">
+  <h2>Volume Brasileiro</h2>
+  <img src="imagens/foto3.jpeg" alt="Volume Brasileiro">
+  <div class="servico">
+    <span>Aplicação: R$ 109,99</span>
+    <span>Manutenção: R$ 69,99</span>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Volume Híbrido</h2>
+  <img src="imagens/foto4.jpeg" alt="Volume Híbrido">
+  <div class="servico">
+    <span>Aplicação: R$ 124,99</span>
+    <span>Manutenção: R$ 69,99</span>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Galeria de Resultados ✨</h2>
+  <div class="galeria">
+    <img src="imagens/foto5.jpeg" alt="Resultado 1">
+    <img src="imagens/foto6.jpeg" alt="Resultado 2">
+  </div>
+</div>
+
+<div class="card cta">
+  <h2>Agende seu horário ✨</h2>
+  <p>@studiobeautycarolinepro</p>
+  <a href="https://wa.me/5511978818235?text=Olá!%20Vim%20pelo%20site%20do%20Caroline%20Beauty%20Studio%20e%20gostaria%20de%20agendar%20um%20horário%20✨">
+    Agendar agora
+  </a>
+</div>
+
+</div>
+
+</body>
+</html>
